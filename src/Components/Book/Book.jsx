@@ -38,7 +38,7 @@ const checkfilldata =(event) =>{
             publisher:pu
         }
         
-        fetch("https://sampledbsc-default-rtdb.firebaseio.com/sampledbsc.json",
+        fetch("https://sdbms-211-default-rtdb.firebaseio.com/book.json",
         {
           method:"POST",
           body:JSON.stringify(myobj),
@@ -47,6 +47,7 @@ const checkfilldata =(event) =>{
         }
         );
         console.log(myobj);
+        alert("Record saved");
     }
 
 }
